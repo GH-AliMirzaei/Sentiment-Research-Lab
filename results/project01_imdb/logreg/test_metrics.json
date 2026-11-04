@@ -1,0 +1,20 @@
+{
+    "model": "TF-IDF + Logistic Regression",
+    "dataset": "IMDB",
+    "split": "test",
+    "samples": 25000,
+    "accuracy": 0.89236,
+    "precision_macro": 0.892382664022674,
+    "recall_macro": 0.89236,
+    "f1_macro": 0.8923584456559552,
+    "confusion_matrix": [
+        [
+            11107,
+            1393
+        ],
+        [
+            1298,
+            11202
+        ]
+    ]
+}
