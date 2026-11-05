@@ -1,0 +1,20 @@
+{
+    "model": "distilbert/distilbert-base-uncased",
+    "dataset": "IMDB",
+    "split": "test",
+    "samples": 25000,
+    "accuracy": 0.90908,
+    "precision_macro": 0.9091111081540864,
+    "recall_macro": 0.90908,
+    "f1_macro": 0.9090782716143121,
+    "confusion_matrix": [
+        [
+            11309,
+            1191
+        ],
+        [
+            1082,
+            11418
+        ]
+    ]
+}
