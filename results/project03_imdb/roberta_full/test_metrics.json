@@ -1,0 +1,20 @@
+{
+    "model": "FacebookAI/roberta-base",
+    "dataset": "IMDB",
+    "split": "test",
+    "samples": 25000,
+    "accuracy": 0.93624,
+    "precision_macro": 0.9363982037750697,
+    "recall_macro": 0.93624,
+    "f1_macro": 0.9362342208819322,
+    "confusion_matrix": [
+        [
+            11584,
+            916
+        ],
+        [
+            678,
+            11822
+        ]
+    ]
+}
