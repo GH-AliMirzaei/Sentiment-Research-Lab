@@ -1,0 +1,20 @@
+{
+    "model": "google-bert/bert-base-uncased",
+    "dataset": "IMDB",
+    "split": "test",
+    "samples": 25000,
+    "accuracy": 0.92044,
+    "precision_macro": 0.920620580154479,
+    "recall_macro": 0.9204399999999999,
+    "f1_macro": 0.9204314599404229,
+    "confusion_matrix": [
+        [
+            11376,
+            1124
+        ],
+        [
+            865,
+            11635
+        ]
+    ]
+}
