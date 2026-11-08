@@ -1,0 +1,43 @@
+{
+    "dataset": "IMDB",
+    "split": "test",
+    "samples": 25000,
+    "recovered_from": "paired_errors.csv",
+    "roberta": {
+        "accuracy": 0.93624,
+        "f1_macro": 0.9362342208819322,
+        "confusion_matrix": [
+            [
+                11584,
+                916
+            ],
+            [
+                678,
+                11822
+            ]
+        ]
+    },
+    "deberta": {
+        "accuracy": 0.93532,
+        "f1_macro": 0.9353196637657402,
+        "confusion_matrix": [
+            [
+                11663,
+                837
+            ],
+            [
+                780,
+                11720
+            ]
+        ]
+    },
+    "paired_comparison": {
+        "both_correct": 22904,
+        "both_wrong": 1115,
+        "roberta_only_correct": 502,
+        "deberta_only_correct": 479,
+        "discordant_samples": 981,
+        "mcnemar_exact_p_value": 0.48244494221152745,
+        "significant_at_0_05": false
+    }
+}

@@ -11,3 +11,4 @@ __pycache__/
 *.pt
 *.pth
 *.safetensors
+/results/project06_imdb/paired_roberta_deberta/paired_errors.csv
