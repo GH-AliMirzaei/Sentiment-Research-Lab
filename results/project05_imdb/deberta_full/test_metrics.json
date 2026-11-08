@@ -1,0 +1,20 @@
+{
+    "model": "microsoft/deberta-v3-small",
+    "dataset": "IMDB",
+    "split": "test",
+    "samples": 25000,
+    "accuracy": 0.93532,
+    "precision_macro": 0.935329052058177,
+    "recall_macro": 0.9353199999999999,
+    "f1_macro": 0.9353196637657402,
+    "confusion_matrix": [
+        [
+            11663,
+            837
+        ],
+        [
+            780,
+            11720
+        ]
+    ]
+}
