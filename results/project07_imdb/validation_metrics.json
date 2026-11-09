@@ -1,0 +1,144 @@
+{
+    "dataset": "IMDB",
+    "split": "validation",
+    "samples": 5000,
+    "max_length": 256,
+    "selected_weight_roberta": 0.5,
+    "selected_weight_deberta": 0.5,
+    "selection_metric": "validation_macro_f1",
+    "models": {
+        "RoBERTa": {
+            "accuracy": 0.929,
+            "precision_macro": 0.9290429042904291,
+            "recall_macro": 0.929,
+            "f1_macro": 0.9289982249556239,
+            "errors": 355,
+            "confusion_matrix": [
+                [
+                    2310,
+                    190
+                ],
+                [
+                    165,
+                    2335
+                ]
+            ]
+        },
+        "DeBERTa": {
+            "accuracy": 0.9286,
+            "precision_macro": 0.9286198193804482,
+            "recall_macro": 0.9286000000000001,
+            "f1_macro": 0.9285991746064585,
+            "errors": 357,
+            "confusion_matrix": [
+                [
+                    2330,
+                    170
+                ],
+                [
+                    187,
+                    2313
+                ]
+            ]
+        }
+    },
+    "ensemble": {
+        "hard_voting_confidence_tiebreak": {
+            "accuracy": 0.9334,
+            "precision_macro": 0.9334056169367955,
+            "recall_macro": 0.9334,
+            "f1_macro": 0.9333997842153008,
+            "errors": 333,
+            "confusion_matrix": [
+                [
+                    2329,
+                    171
+                ],
+                [
+                    162,
+                    2338
+                ]
+            ]
+        },
+        "soft_voting": {
+            "accuracy": 0.9334,
+            "precision_macro": 0.9334056169367955,
+            "recall_macro": 0.9334,
+            "f1_macro": 0.9333997842153008,
+            "errors": 333,
+            "confusion_matrix": [
+                [
+                    2329,
+                    171
+                ],
+                [
+                    162,
+                    2338
+                ]
+            ]
+        },
+        "weighted_soft_voting": {
+            "accuracy": 0.9334,
+            "precision_macro": 0.9334056169367955,
+            "recall_macro": 0.9334,
+            "f1_macro": 0.9333997842153008,
+            "errors": 333,
+            "confusion_matrix": [
+                [
+                    2329,
+                    171
+                ],
+                [
+                    162,
+                    2338
+                ]
+            ]
+        }
+    },
+    "weight_search": [
+        {
+            "weight_roberta": 0.0,
+            "f1_macro": 0.9285991746064585
+        },
+        {
+            "weight_roberta": 0.1,
+            "f1_macro": 0.9283988543816701
+        },
+        {
+            "weight_roberta": 0.2,
+            "f1_macro": 0.9289984976082093
+        },
+        {
+            "weight_roberta": 0.3,
+            "f1_macro": 0.9293991838545654
+        },
+        {
+            "weight_roberta": 0.4,
+            "f1_macro": 0.9307996014057041
+        },
+        {
+            "weight_roberta": 0.5,
+            "f1_macro": 0.9333997842153008
+        },
+        {
+            "weight_roberta": 0.6,
+            "f1_macro": 0.9315989055824894
+        },
+        {
+            "weight_roberta": 0.7,
+            "f1_macro": 0.9305987757624045
+        },
+        {
+            "weight_roberta": 0.8,
+            "f1_macro": 0.9295983779466279
+        },
+        {
+            "weight_roberta": 0.9,
+            "f1_macro": 0.9293982349558738
+        },
+        {
+            "weight_roberta": 1.0,
+            "f1_macro": 0.9289982249556239
+        }
+    ]
+}

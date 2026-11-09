@@ -1,0 +1,98 @@
+{
+    "dataset": "IMDB",
+    "split": "test",
+    "samples": 25000,
+    "max_length": 256,
+    "selected_weight_roberta": 0.5,
+    "selected_weight_deberta": 0.5,
+    "selection_metric": "validation_macro_f1",
+    "models": {
+        "RoBERTa": {
+            "accuracy": 0.93624,
+            "precision_macro": 0.9363982037750697,
+            "recall_macro": 0.93624,
+            "f1_macro": 0.9362342208819322,
+            "errors": 1594,
+            "confusion_matrix": [
+                [
+                    11584,
+                    916
+                ],
+                [
+                    678,
+                    11822
+                ]
+            ]
+        },
+        "DeBERTa": {
+            "accuracy": 0.93532,
+            "precision_macro": 0.935329052058177,
+            "recall_macro": 0.9353199999999999,
+            "f1_macro": 0.9353196637657402,
+            "errors": 1617,
+            "confusion_matrix": [
+                [
+                    11663,
+                    837
+                ],
+                [
+                    780,
+                    11720
+                ]
+            ]
+        }
+    },
+    "ensemble": {
+        "hard_voting_confidence_tiebreak": {
+            "accuracy": 0.93952,
+            "precision_macro": 0.9396032334211681,
+            "recall_macro": 0.93952,
+            "f1_macro": 0.9395171370799734,
+            "errors": 1512,
+            "confusion_matrix": [
+                [
+                    11658,
+                    842
+                ],
+                [
+                    670,
+                    11830
+                ]
+            ]
+        },
+        "soft_voting": {
+            "accuracy": 0.93952,
+            "precision_macro": 0.9396032334211681,
+            "recall_macro": 0.93952,
+            "f1_macro": 0.9395171370799734,
+            "errors": 1512,
+            "confusion_matrix": [
+                [
+                    11658,
+                    842
+                ],
+                [
+                    670,
+                    11830
+                ]
+            ]
+        },
+        "weighted_soft_voting": {
+            "accuracy": 0.93952,
+            "precision_macro": 0.9396032334211681,
+            "recall_macro": 0.93952,
+            "f1_macro": 0.9395171370799734,
+            "errors": 1512,
+            "confusion_matrix": [
+                [
+                    11658,
+                    842
+                ],
+                [
+                    670,
+                    11830
+                ]
+            ]
+        }
+    }
+}

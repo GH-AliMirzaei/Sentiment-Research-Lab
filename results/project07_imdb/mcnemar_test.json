@@ -1,0 +1,15 @@
+{
+    "baseline": "RoBERTa",
+    "comparison": "RoBERTa + DeBERTa Ensemble",
+    "samples": 25000,
+    "selected_weight_roberta": 0.5,
+    "both_correct": 23269,
+    "both_wrong": 1375,
+    "roberta_only_correct": 137,
+    "ensemble_only_correct": 219,
+    "roberta_accuracy": 0.93624,
+    "ensemble_accuracy": 0.93952,
+    "net_improvement_samples": 82,
+    "mcnemar_exact_p_value": 1.62633240032472e-05,
+    "significant_at_0_05": true
+}
