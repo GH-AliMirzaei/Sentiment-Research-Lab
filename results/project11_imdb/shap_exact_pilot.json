@@ -1,0 +1,325 @@
+{
+    "project": "11",
+    "method": "Exact SHAP",
+    "features": "8 contiguous word groups",
+    "max_words": 96,
+    "target": "positive_logit_minus_negative_logit",
+    "samples": {
+        "RoBERTa": {
+            "429": {
+                "prediction": 0,
+                "full_margin": -5.351075172424316,
+                "baseline_margin": 1.411250352859497,
+                "reconstruction_error": 2.6645352591003757e-15,
+                "chunks": [
+                    {
+                        "group": 1,
+                        "preview": "I don't see how anyone who even likes Van Damne could like",
+                        "shap_value": -2.7734026101373472
+                    },
+                    {
+                        "group": 2,
+                        "preview": "this movie.<br /><br />The movie actually starts out with some pr",
+                        "shap_value": -1.549290592542717
+                    },
+                    {
+                        "group": 3,
+                        "preview": "would say the action scenes at the beginning of the movie is",
+                        "shap_value": -0.5802153314153353
+                    },
+                    {
+                        "group": 4,
+                        "preview": "excellent. The actions scenes with the family ward trying to save",
+                        "shap_value": 2.311476207205228
+                    },
+                    {
+                        "group": 5,
+                        "preview": "twins is a great start and is good lead in to the",
+                        "shap_value": 1.8464404515567272
+                    },
+                    {
+                        "group": 6,
+                        "preview": "main story. However, the film is all down hill from there. <br",
+                        "shap_value": -5.32793552662645
+                    },
+                    {
+                        "group": 7,
+                        "preview": "/><br />It would have been nice if the director could have stayed",
+                        "shap_value": -0.4005679994821547
+                    },
+                    {
+                        "group": 8,
+                        "preview": "with the original premise. That is the brothers are born in diffe",
+                        "shap_value": -0.28883012384176265
+                    }
+                ],
+                "top_positive": [
+                    {
+                        "group": 4,
+                        "preview": "excellent. The actions scenes with the family ward trying to save",
+                        "shap_value": 2.311476207205228
+                    },
+                    {
+                        "group": 5,
+                        "preview": "twins is a great start and is good lead in to the",
+                        "shap_value": 1.8464404515567272
+                    }
+                ],
+                "top_negative": [
+                    {
+                        "group": 6,
+                        "preview": "main story. However, the film is all down hill from there. <br",
+                        "shap_value": -5.32793552662645
+                    },
+                    {
+                        "group": 1,
+                        "preview": "I don't see how anyone who even likes Van Damne could like",
+                        "shap_value": -2.7734026101373472
+                    },
+                    {
+                        "group": 2,
+                        "preview": "this movie.<br /><br />The movie actually starts out with some pr",
+                        "shap_value": -1.549290592542717
+                    }
+                ],
+                "actual": 0
+            },
+            "2125": {
+                "prediction": 1,
+                "full_margin": 0.6330176591873169,
+                "baseline_margin": 1.411246657371521,
+                "reconstruction_error": 3.4987926477825226e-05,
+                "chunks": [
+                    {
+                        "group": 1,
+                        "preview": "I have this movie on DVD and must have watched it thirty",
+                        "shap_value": 1.4957852698685161
+                    },
+                    {
+                        "group": 2,
+                        "preview": "times by now. I must really love it, right? Well, not really.<br",
+                        "shap_value": 1.419184109444419
+                    },
+                    {
+                        "group": 3,
+                        "preview": "/><br />I was a surfer earlier in my life, and I loved",
+                        "shap_value": 1.6911824584184645
+                    },
+                    {
+                        "group": 4,
+                        "preview": "the sport. To this day, I am fascinated by good surfing. Riding",
+                        "shap_value": 0.37632215266071606
+                    },
+                    {
+                        "group": 5,
+                        "preview": "Giants has plenty of that, and thus I am a sucker for",
+                        "shap_value": 0.7021314157793914
+                    },
+                    {
+                        "group": 6,
+                        "preview": "the thing. But I definitely have some bones to pick with it.",
+                        "shap_value": 1.191718102299741
+                    },
+                    {
+                        "group": 7,
+                        "preview": "(Peralta, you listening?).<br /><br />First, the movie has too li",
+                        "shap_value": -8.397234739842162
+                    },
+                    {
+                        "group": 8,
+                        "preview": "its subject matter. The cutting and editing of the waves is such",
+                        "shap_value": 0.7427172211131876
+                    }
+                ],
+                "top_positive": [
+                    {
+                        "group": 3,
+                        "preview": "/><br />I was a surfer earlier in my life, and I loved",
+                        "shap_value": 1.6911824584184645
+                    },
+                    {
+                        "group": 1,
+                        "preview": "I have this movie on DVD and must have watched it thirty",
+                        "shap_value": 1.4957852698685161
+                    },
+                    {
+                        "group": 2,
+                        "preview": "times by now. I must really love it, right? Well, not really.<br",
+                        "shap_value": 1.419184109444419
+                    }
+                ],
+                "top_negative": [
+                    {
+                        "group": 7,
+                        "preview": "(Peralta, you listening?).<br /><br />First, the movie has too li",
+                        "shap_value": -8.397234739842162
+                    }
+                ],
+                "actual": 1
+            }
+        },
+        "DeBERTa": {
+            "429": {
+                "prediction": 0,
+                "full_margin": -4.800652980804443,
+                "baseline_margin": 0.28533339500427246,
+                "reconstruction_error": 4.768371590913034e-07,
+                "chunks": [
+                    {
+                        "group": 1,
+                        "preview": "I don't see how anyone who even likes Van Damne could like",
+                        "shap_value": -1.621318809053905
+                    },
+                    {
+                        "group": 2,
+                        "preview": "this movie.<br /><br />The movie actually starts out with some pr",
+                        "shap_value": -0.47782223399817314
+                    },
+                    {
+                        "group": 3,
+                        "preview": "would say the action scenes at the beginning of the movie is",
+                        "shap_value": -0.21648211955048505
+                    },
+                    {
+                        "group": 4,
+                        "preview": "excellent. The actions scenes with the family ward trying to save",
+                        "shap_value": 2.2467726302954065
+                    },
+                    {
+                        "group": 5,
+                        "preview": "twins is a great start and is good lead in to the",
+                        "shap_value": 1.2252670060532784
+                    },
+                    {
+                        "group": 6,
+                        "preview": "main story. However, the film is all down hill from there. <br",
+                        "shap_value": -5.560315100897458
+                    },
+                    {
+                        "group": 7,
+                        "preview": "/><br />It would have been nice if the director could have stayed",
+                        "shap_value": -0.8585056745624606
+                    },
+                    {
+                        "group": 8,
+                        "preview": "with the original premise. That is the brothers are born in diffe",
+                        "shap_value": 0.17641840274223972
+                    }
+                ],
+                "top_positive": [
+                    {
+                        "group": 4,
+                        "preview": "excellent. The actions scenes with the family ward trying to save",
+                        "shap_value": 2.2467726302954065
+                    },
+                    {
+                        "group": 5,
+                        "preview": "twins is a great start and is good lead in to the",
+                        "shap_value": 1.2252670060532784
+                    },
+                    {
+                        "group": 8,
+                        "preview": "with the original premise. That is the brothers are born in diffe",
+                        "shap_value": 0.17641840274223972
+                    }
+                ],
+                "top_negative": [
+                    {
+                        "group": 6,
+                        "preview": "main story. However, the film is all down hill from there. <br",
+                        "shap_value": -5.560315100897458
+                    },
+                    {
+                        "group": 1,
+                        "preview": "I don't see how anyone who even likes Van Damne could like",
+                        "shap_value": -1.621318809053905
+                    },
+                    {
+                        "group": 7,
+                        "preview": "/><br />It would have been nice if the director could have stayed",
+                        "shap_value": -0.8585056745624606
+                    }
+                ],
+                "actual": 0
+            },
+            "2125": {
+                "prediction": 0,
+                "full_margin": -2.6289591789245605,
+                "baseline_margin": 0.2853333055973053,
+                "reconstruction_error": 4.768371583807607e-06,
+                "chunks": [
+                    {
+                        "group": 1,
+                        "preview": "I have this movie on DVD and must have watched it thirty",
+                        "shap_value": 1.684588607790924
+                    },
+                    {
+                        "group": 2,
+                        "preview": "times by now. I must really love it, right? Well, not really.<br",
+                        "shap_value": -0.6924007128391949
+                    },
+                    {
+                        "group": 3,
+                        "preview": "/><br />I was a surfer earlier in my life, and I loved",
+                        "shap_value": 0.19321937369448783
+                    },
+                    {
+                        "group": 4,
+                        "preview": "the sport. To this day, I am fascinated by good surfing. Riding",
+                        "shap_value": 0.5134146742167929
+                    },
+                    {
+                        "group": 5,
+                        "preview": "Giants has plenty of that, and thus I am a sucker for",
+                        "shap_value": 0.09950079612788702
+                    },
+                    {
+                        "group": 6,
+                        "preview": "the thing. But I definitely have some bones to pick with it.",
+                        "shap_value": 0.6388877307375272
+                    },
+                    {
+                        "group": 7,
+                        "preview": "(Peralta, you listening?).<br /><br />First, the movie has too li",
+                        "shap_value": -6.940371318303403
+                    },
+                    {
+                        "group": 8,
+                        "preview": "its subject matter. The cutting and editing of the waves is such",
+                        "shap_value": 1.5888635956815302
+                    }
+                ],
+                "top_positive": [
+                    {
+                        "group": 1,
+                        "preview": "I have this movie on DVD and must have watched it thirty",
+                        "shap_value": 1.684588607790924
+                    },
+                    {
+                        "group": 8,
+                        "preview": "its subject matter. The cutting and editing of the waves is such",
+                        "shap_value": 1.5888635956815302
+                    },
+                    {
+                        "group": 6,
+                        "preview": "the thing. But I definitely have some bones to pick with it.",
+                        "shap_value": 0.6388877307375272
+                    }
+                ],
+                "top_negative": [
+                    {
+                        "group": 7,
+                        "preview": "(Peralta, you listening?).<br /><br />First, the movie has too li",
+                        "shap_value": -6.940371318303403
+                    },
+                    {
+                        "group": 2,
+                        "preview": "times by now. I must really love it, right? Well, not really.<br",
+                        "shap_value": -0.6924007128391949
+                    }
+                ],
+                "actual": 1
+            }
+        }
+    }
+}

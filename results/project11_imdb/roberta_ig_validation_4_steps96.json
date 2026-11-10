@@ -1,0 +1,327 @@
+{
+    "project": "11",
+    "method": "Integrated Gradients",
+    "model": "RoBERTa",
+    "split": "validation",
+    "seed": 42,
+    "integration_steps": 96,
+    "target": "positive_logit_minus_negative_logit",
+    "samples": [
+        {
+            "prediction": 0,
+            "confidence": 0.9983704686164856,
+            "top_positive": [
+                {
+                    "token": ".",
+                    "score": 0.2939307391643524
+                },
+                {
+                    "token": ".",
+                    "score": 0.1322559118270874
+                },
+                {
+                    "token": "ĠThat",
+                    "score": 0.11126285046339035
+                },
+                {
+                    "token": "ĠMy",
+                    "score": 0.11068852245807648
+                },
+                {
+                    "token": "Ġborn",
+                    "score": 0.06764965504407883
+                },
+                {
+                    "token": "Ġthere",
+                    "score": 0.06235863268375397
+                },
+                {
+                    "token": "Ġthus",
+                    "score": 0.06104378402233124
+                },
+                {
+                    "token": "ĠOne",
+                    "score": 0.05594610422849655
+                }
+            ],
+            "top_negative": [
+                {
+                    "token": "Ġridiculous",
+                    "score": -0.7422186136245728
+                },
+                {
+                    "token": "Ġjust",
+                    "score": -0.5700672268867493
+                },
+                {
+                    "token": "Ġpromise",
+                    "score": -0.2530508041381836
+                },
+                {
+                    "token": "Ġare",
+                    "score": -0.20143669843673706
+                },
+                {
+                    "token": "Ġplain",
+                    "score": -0.19774170219898224
+                },
+                {
+                    "token": "Ġmovie",
+                    "score": -0.1682186722755432
+                },
+                {
+                    "token": "Ġdon",
+                    "score": -0.163173645734787
+                },
+                {
+                    "token": "Ġactually",
+                    "score": -0.1555119752883911
+                }
+            ],
+            "completeness_error": 0.10275411605834961,
+            "margin_difference": -6.876235008239746,
+            "attribution_sum": -6.978989124298096,
+            "group": "correct_negative",
+            "index": 429,
+            "actual": 0,
+            "correct": true
+        },
+        {
+            "prediction": 1,
+            "confidence": 0.9930108189582825,
+            "top_positive": [
+                {
+                    "token": ",",
+                    "score": 0.1924126297235489
+                },
+                {
+                    "token": "Ġcenturies",
+                    "score": 0.15351015329360962
+                },
+                {
+                    "token": "Ġstory",
+                    "score": 0.12832212448120117
+                },
+                {
+                    "token": "Ġfriend",
+                    "score": 0.12679064273834229
+                },
+                {
+                    "token": "Ġmen",
+                    "score": 0.11536207795143127
+                },
+                {
+                    "token": "Ġfamiliar",
+                    "score": 0.10809765756130219
+                },
+                {
+                    "token": "Ġmany",
+                    "score": 0.10546780377626419
+                },
+                {
+                    "token": "Ġas",
+                    "score": 0.10207733511924744
+                }
+            ],
+            "top_negative": [
+                {
+                    "token": ".",
+                    "score": -0.12504535913467407
+                },
+                {
+                    "token": "Rec",
+                    "score": -0.11702152341604233
+                },
+                {
+                    "token": "ĠThe",
+                    "score": -0.06600512564182281
+                },
+                {
+                    "token": ".",
+                    "score": -0.06282012164592743
+                },
+                {
+                    "token": "Ġtoo",
+                    "score": -0.05084928870201111
+                },
+                {
+                    "token": "Ġof",
+                    "score": -0.04307915270328522
+                },
+                {
+                    "token": ",",
+                    "score": -0.03949655219912529
+                },
+                {
+                    "token": "ĠAll",
+                    "score": -0.037240661680698395
+                }
+            ],
+            "completeness_error": 0.34714269638061523,
+            "margin_difference": 4.4980034828186035,
+            "attribution_sum": 4.150860786437988,
+            "group": "correct_positive",
+            "index": 3903,
+            "actual": 1,
+            "correct": true
+        },
+        {
+            "prediction": 1,
+            "confidence": 0.9879698753356934,
+            "top_positive": [
+                {
+                    "token": "Ġexcerpt",
+                    "score": 0.415208101272583
+                },
+                {
+                    "token": "Ġf",
+                    "score": 0.35333114862442017
+                },
+                {
+                    "token": ".",
+                    "score": 0.3474486768245697
+                },
+                {
+                    "token": "Ġthis",
+                    "score": 0.3158283233642578
+                },
+                {
+                    "token": "ĠHere",
+                    "score": 0.29522445797920227
+                },
+                {
+                    "token": "!",
+                    "score": 0.29505428671836853
+                },
+                {
+                    "token": "Ġtruly",
+                    "score": 0.2944771945476532
+                },
+                {
+                    "token": "licks",
+                    "score": 0.28598180413246155
+                }
+            ],
+            "top_negative": [
+                {
+                    "token": "Ġbad",
+                    "score": -0.6829401850700378
+                },
+                {
+                    "token": "Ġgo",
+                    "score": -0.4397849440574646
+                },
+                {
+                    "token": "Scene",
+                    "score": -0.3016373813152313
+                },
+                {
+                    "token": "Oh",
+                    "score": -0.24373944103717804
+                },
+                {
+                    "token": "Ġdisaster",
+                    "score": -0.22396618127822876
+                },
+                {
+                    "token": "Ġin",
+                    "score": -0.20950406789779663
+                },
+                {
+                    "token": "Ġdisaster",
+                    "score": -0.19098179042339325
+                },
+                {
+                    "token": "Ġman",
+                    "score": -0.18559111654758453
+                }
+            ],
+            "completeness_error": 0.01399374008178711,
+            "margin_difference": 3.949859142303467,
+            "attribution_sum": 3.963852882385254,
+            "group": "wrong_negative",
+            "index": 3661,
+            "actual": 0,
+            "correct": false
+        },
+        {
+            "prediction": 0,
+            "confidence": 0.9700156450271606,
+            "top_positive": [
+                {
+                    "token": "Ġtruly",
+                    "score": 0.8624773621559143
+                },
+                {
+                    "token": "Ġlove",
+                    "score": 0.7758655548095703
+                },
+                {
+                    "token": "Ġmix",
+                    "score": 0.6780047416687012
+                },
+                {
+                    "token": "Ġan",
+                    "score": 0.6232726573944092
+                },
+                {
+                    "token": "Ġsoundtrack",
+                    "score": 0.5912629961967468
+                },
+                {
+                    "token": "Ġit",
+                    "score": 0.41010648012161255
+                },
+                {
+                    "token": "Ġ/>",
+                    "score": 0.3654313087463379
+                },
+                {
+                    "token": "Ġa",
+                    "score": 0.356645405292511
+                }
+            ],
+            "top_negative": [
+                {
+                    "token": "Ġbad",
+                    "score": -1.2260993719100952
+                },
+                {
+                    "token": "Ġbut",
+                    "score": -1.0825259685516357
+                },
+                {
+                    "token": "Ġmovie",
+                    "score": -1.0594191551208496
+                },
+                {
+                    "token": "Ġtoo",
+                    "score": -0.6866233348846436
+                },
+                {
+                    "token": "Ġruined",
+                    "score": -0.649117112159729
+                },
+                {
+                    "token": "Ġespecially",
+                    "score": -0.6345765590667725
+                },
+                {
+                    "token": "Ġseems",
+                    "score": -0.4944053292274475
+                },
+                {
+                    "token": "Ġequally",
+                    "score": -0.4502067267894745
+                }
+            ],
+            "completeness_error": 0.6794934272766113,
+            "margin_difference": -3.9350194931030273,
+            "attribution_sum": -3.255526065826416,
+            "group": "wrong_positive",
+            "index": 2125,
+            "actual": 1,
+            "correct": false
+        }
+    ]
+}

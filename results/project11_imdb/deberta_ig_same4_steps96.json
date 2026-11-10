@@ -1,0 +1,330 @@
+{
+    "project": "11",
+    "model": "DeBERTa-v3-small",
+    "method": "Integrated Gradients",
+    "integration_steps": 96,
+    "target": "positive_logit_minus_negative_logit",
+    "selected_using": "RoBERTa reference predictions",
+    "samples": [
+        {
+            "prediction": 0,
+            "confidence": 0.995678722858429,
+            "top_positive": [
+                {
+                    "token": ".",
+                    "score": 0.42838138341903687
+                },
+                {
+                    "token": "▁is",
+                    "score": 0.2953142523765564
+                },
+                {
+                    "token": "▁The",
+                    "score": 0.28502148389816284
+                },
+                {
+                    "token": "▁excellent",
+                    "score": 0.19029539823532104
+                },
+                {
+                    "token": "▁a",
+                    "score": 0.17867517471313477
+                },
+                {
+                    "token": "The",
+                    "score": 0.16050182282924652
+                },
+                {
+                    "token": "▁actually",
+                    "score": 0.15894842147827148
+                },
+                {
+                    "token": "▁is",
+                    "score": 0.15472149848937988
+                }
+            ],
+            "top_negative": [
+                {
+                    "token": ".",
+                    "score": -0.6710940599441528
+                },
+                {
+                    "token": "▁just",
+                    "score": -0.515892505645752
+                },
+                {
+                    "token": "▁However",
+                    "score": -0.40901896357536316
+                },
+                {
+                    "token": ".",
+                    "score": -0.33622369170188904
+                },
+                {
+                    "token": "▁plot",
+                    "score": -0.30742236971855164
+                },
+                {
+                    "token": ".",
+                    "score": -0.27756088972091675
+                },
+                {
+                    "token": "The",
+                    "score": -0.23323501646518707
+                },
+                {
+                    "token": "▁are",
+                    "score": -0.2183019369840622
+                }
+            ],
+            "completeness_error": 0.050452232360839844,
+            "margin_difference": -5.728967189788818,
+            "attribution_sum": -5.779419422149658,
+            "index": 429,
+            "roberta_reference_group": "correct_negative",
+            "actual": 0,
+            "correct": true,
+            "relative_completeness_error": 0.008806514453558883
+        },
+        {
+            "prediction": 1,
+            "confidence": 0.9592506885528564,
+            "top_positive": [
+                {
+                    "token": "▁too",
+                    "score": 1.511789321899414
+                },
+                {
+                    "token": "SPO",
+                    "score": 0.5791157484054565
+                },
+                {
+                    "token": ",",
+                    "score": 0.47438520193099976
+                },
+                {
+                    "token": "ERS",
+                    "score": 0.44282835721969604
+                },
+                {
+                    "token": "▁familiar",
+                    "score": 0.42588379979133606
+                },
+                {
+                    "token": "▁wounding",
+                    "score": 0.26201432943344116
+                },
+                {
+                    "token": "▁repeated",
+                    "score": 0.24474982917308807
+                },
+                {
+                    "token": "Recover",
+                    "score": 0.2200465053319931
+                }
+            ],
+            "top_negative": [
+                {
+                    "token": "▁well",
+                    "score": -0.41529083251953125
+                },
+                {
+                    "token": ".",
+                    "score": -0.24489569664001465
+                },
+                {
+                    "token": ".",
+                    "score": -0.204593688249588
+                },
+                {
+                    "token": "▁life",
+                    "score": -0.18291625380516052
+                },
+                {
+                    "token": ".",
+                    "score": -0.17806270718574524
+                },
+                {
+                    "token": "▁All",
+                    "score": -0.17230048775672913
+                },
+                {
+                    "token": "▁happens",
+                    "score": -0.1675272136926651
+                },
+                {
+                    "token": ".",
+                    "score": -0.14139404892921448
+                }
+            ],
+            "completeness_error": 0.009992361068725586,
+            "margin_difference": 2.8696160316467285,
+            "attribution_sum": 2.879608392715454,
+            "index": 3903,
+            "roberta_reference_group": "correct_positive",
+            "actual": 1,
+            "correct": true,
+            "relative_completeness_error": 0.003482124771581887
+        },
+        {
+            "prediction": 1,
+            "confidence": 0.9851427674293518,
+            "top_positive": [
+                {
+                    "token": "▁gem",
+                    "score": 2.157231330871582
+                },
+                {
+                    "token": "!",
+                    "score": 1.1273409128189087
+                },
+                {
+                    "token": "▁real",
+                    "score": 0.5359240770339966
+                },
+                {
+                    "token": "!",
+                    "score": 0.5128473043441772
+                },
+                {
+                    "token": "▁drama",
+                    "score": 0.47019290924072266
+                },
+                {
+                    "token": "▁off",
+                    "score": 0.46957626938819885
+                },
+                {
+                    "token": "▁A",
+                    "score": 0.42795035243034363
+                },
+                {
+                    "token": "▁this",
+                    "score": 0.3801983594894409
+                }
+            ],
+            "top_negative": [
+                {
+                    "token": ".",
+                    "score": -0.40195417404174805
+                },
+                {
+                    "token": "▁film",
+                    "score": -0.3182978928089142
+                },
+                {
+                    "token": "▁horror",
+                    "score": -0.27303531765937805
+                },
+                {
+                    "token": ")",
+                    "score": -0.2709605097770691
+                },
+                {
+                    "token": ".",
+                    "score": -0.2583880126476288
+                },
+                {
+                    "token": "▁the",
+                    "score": -0.23414388298988342
+                },
+                {
+                    "token": "▁just",
+                    "score": -0.2311108559370041
+                },
+                {
+                    "token": "▁because",
+                    "score": -0.22316284477710724
+                }
+            ],
+            "completeness_error": 0.007421970367431641,
+            "margin_difference": 3.905935049057007,
+            "attribution_sum": 3.9133570194244385,
+            "index": 3661,
+            "roberta_reference_group": "wrong_negative",
+            "actual": 0,
+            "correct": false,
+            "relative_completeness_error": 0.0019001776205222602
+        },
+        {
+            "prediction": 0,
+            "confidence": 0.9931873083114624,
+            "top_positive": [
+                {
+                    "token": "▁it",
+                    "score": 0.21820664405822754
+                },
+                {
+                    "token": "▁love",
+                    "score": 0.16247770190238953
+                },
+                {
+                    "token": "▁must",
+                    "score": 0.14956903457641602
+                },
+                {
+                    "token": "▁I",
+                    "score": 0.14353260397911072
+                },
+                {
+                    "token": ".",
+                    "score": 0.1377907395362854
+                },
+                {
+                    "token": ".",
+                    "score": 0.13372690975666046
+                },
+                {
+                    "token": ",",
+                    "score": 0.13218137621879578
+                },
+                {
+                    "token": "▁too",
+                    "score": 0.11824855208396912
+                }
+            ],
+            "top_negative": [
+                {
+                    "token": "▁bad",
+                    "score": -0.4043416976928711
+                },
+                {
+                    "token": "▁especially",
+                    "score": -0.3839420676231384
+                },
+                {
+                    "token": ".",
+                    "score": -0.25365734100341797
+                },
+                {
+                    "token": ".",
+                    "score": -0.24021220207214355
+                },
+                {
+                    "token": ".",
+                    "score": -0.19350150227546692
+                },
+                {
+                    "token": "▁in",
+                    "score": -0.18612873554229736
+                },
+                {
+                    "token": ".",
+                    "score": -0.18498116731643677
+                },
+                {
+                    "token": "▁But",
+                    "score": -0.17642587423324585
+                }
+            ],
+            "completeness_error": 0.014132022857666016,
+            "margin_difference": -5.271225452423096,
+            "attribution_sum": -5.285357475280762,
+            "index": 2125,
+            "roberta_reference_group": "wrong_positive",
+            "actual": 1,
+            "correct": false,
+            "relative_completeness_error": 0.0026809748483001723
+        }
+    ]
+}
