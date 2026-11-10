@@ -1,0 +1,109 @@
+{
+    "project": "09",
+    "architecture": "Frozen BERT + CNN",
+    "dataset": "IMDB",
+    "train_samples": 512,
+    "validation_samples": 200,
+    "epochs": 2,
+    "max_length": 256,
+    "seed": 42,
+    "trainable_parameters": 664418,
+    "best_epoch": 1,
+    "best_validation": {
+        "bert_original": {
+            "accuracy": 0.93,
+            "macro_f1": 0.9299719887955182,
+            "confusion_matrix": [
+                [
+                    95,
+                    5
+                ],
+                [
+                    9,
+                    91
+                ]
+            ]
+        },
+        "bert_cnn": {
+            "accuracy": 0.94,
+            "macro_f1": 0.93999399939994,
+            "confusion_matrix": [
+                [
+                    95,
+                    5
+                ],
+                [
+                    7,
+                    93
+                ]
+            ]
+        }
+    },
+    "history": [
+        {
+            "epoch": 1,
+            "training_loss": 0.14613681719833949,
+            "bert_original": {
+                "accuracy": 0.93,
+                "macro_f1": 0.9299719887955182,
+                "confusion_matrix": [
+                    [
+                        95,
+                        5
+                    ],
+                    [
+                        9,
+                        91
+                    ]
+                ]
+            },
+            "bert_cnn": {
+                "accuracy": 0.94,
+                "macro_f1": 0.93999399939994,
+                "confusion_matrix": [
+                    [
+                        95,
+                        5
+                    ],
+                    [
+                        7,
+                        93
+                    ]
+                ]
+            }
+        },
+        {
+            "epoch": 2,
+            "training_loss": 0.08814686943668448,
+            "bert_original": {
+                "accuracy": 0.93,
+                "macro_f1": 0.9299719887955182,
+                "confusion_matrix": [
+                    [
+                        95,
+                        5
+                    ],
+                    [
+                        9,
+                        91
+                    ]
+                ]
+            },
+            "bert_cnn": {
+                "accuracy": 0.925,
+                "macro_f1": 0.9249831212022706,
+                "confusion_matrix": [
+                    [
+                        91,
+                        9
+                    ],
+                    [
+                        6,
+                        94
+                    ]
+                ]
+            }
+        }
+    ],
+    "cnn_checkpoint": "checkpoints\\project09_imdb\\bert_cnn_train512_val200_epochs2.pt"
+}

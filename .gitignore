@@ -17,3 +17,4 @@ __pycache__/
 /results/project08_imdb/qwen15b_rubric_v1_predictions.jsonl
 /checkpoints/project08_imdb/
 /results/project08_imdb/validation_qlora_*_predictions.jsonl
+/checkpoints/project09_imdb/

@@ -1,0 +1,109 @@
+{
+    "project": "09",
+    "architecture": "Frozen BERT + BiLSTM",
+    "dataset": "IMDB",
+    "train_samples": 512,
+    "validation_samples": 200,
+    "epochs": 2,
+    "max_length": 256,
+    "seed": 42,
+    "trainable_parameters": 665474,
+    "best_epoch": 2,
+    "best_validation": {
+        "bert_original": {
+            "accuracy": 0.93,
+            "macro_f1": 0.9299719887955182,
+            "confusion_matrix": [
+                [
+                    95,
+                    5
+                ],
+                [
+                    9,
+                    91
+                ]
+            ]
+        },
+        "bert_bilstm": {
+            "accuracy": 0.935,
+            "macro_f1": 0.9349853717086345,
+            "confusion_matrix": [
+                [
+                    95,
+                    5
+                ],
+                [
+                    8,
+                    92
+                ]
+            ]
+        }
+    },
+    "history": [
+        {
+            "epoch": 1,
+            "training_loss": 0.16030698652321007,
+            "bert_original": {
+                "accuracy": 0.93,
+                "macro_f1": 0.9299719887955182,
+                "confusion_matrix": [
+                    [
+                        95,
+                        5
+                    ],
+                    [
+                        9,
+                        91
+                    ]
+                ]
+            },
+            "bert_bilstm": {
+                "accuracy": 0.93,
+                "macro_f1": 0.9299929992999301,
+                "confusion_matrix": [
+                    [
+                        94,
+                        6
+                    ],
+                    [
+                        8,
+                        92
+                    ]
+                ]
+            }
+        },
+        {
+            "epoch": 2,
+            "training_loss": 0.08855701994616538,
+            "bert_original": {
+                "accuracy": 0.93,
+                "macro_f1": 0.9299719887955182,
+                "confusion_matrix": [
+                    [
+                        95,
+                        5
+                    ],
+                    [
+                        9,
+                        91
+                    ]
+                ]
+            },
+            "bert_bilstm": {
+                "accuracy": 0.935,
+                "macro_f1": 0.9349853717086345,
+                "confusion_matrix": [
+                    [
+                        95,
+                        5
+                    ],
+                    [
+                        8,
+                        92
+                    ]
+                ]
+            }
+        }
+    ],
+    "bilstm_checkpoint": "checkpoints\\project09_imdb\\bert_bilstm_train512_val200_epochs2.pt"
+}
