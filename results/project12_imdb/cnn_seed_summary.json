@@ -1,0 +1,78 @@
+{
+  "experiment": "BERT CNN seed sensitivity",
+  "train_samples": 512,
+  "selection_samples": 200,
+  "disjoint_holdout_samples": 1000,
+  "epochs": 2,
+  "seeds": [
+    11,
+    22,
+    33
+  ],
+  "torch_version": "2.11.0+cu128",
+  "cuda_device": "NVIDIA GeForce RTX 4050 Laptop GPU",
+  "baseline_accuracy": 0.902,
+  "mean_cnn_accuracy": 0.9093333333333332,
+  "sample_std_cnn_accuracy": 0.001527525231651948,
+  "min_cnn_accuracy": 0.908,
+  "max_cnn_accuracy": 0.911,
+  "runs": [
+    {
+      "seed": 11,
+      "fixed_data_seeds": {
+        "train": 42,
+        "validation_selection": 43,
+        "holdout": 1042
+      },
+      "best_epoch": 1,
+      "best_validation_macro_f1": 0.93,
+      "holdout_1000": {
+        "bert_accuracy": 0.902,
+        "cnn_accuracy": 0.908,
+        "cnn_macro_f1": 0.9079631852741097,
+        "delta_percentage_points": 0.6000000000000005,
+        "cnn_only_correct": 18,
+        "bert_only_correct": 12,
+        "mcnemar_exact_p": 0.36159460805356514
+      }
+    },
+    {
+      "seed": 22,
+      "fixed_data_seeds": {
+        "train": 42,
+        "validation_selection": 43,
+        "holdout": 1042
+      },
+      "best_epoch": 2,
+      "best_validation_macro_f1": 0.934998374959374,
+      "holdout_1000": {
+        "bert_accuracy": 0.902,
+        "cnn_accuracy": 0.911,
+        "cnn_macro_f1": 0.9109956387863005,
+        "delta_percentage_points": 0.9000000000000008,
+        "cnn_only_correct": 15,
+        "bert_only_correct": 6,
+        "mcnemar_exact_p": 0.0783538818359375
+      }
+    },
+    {
+      "seed": 33,
+      "fixed_data_seeds": {
+        "train": 42,
+        "validation_selection": 43,
+        "holdout": 1042
+      },
+      "best_epoch": 1,
+      "best_validation_macro_f1": 0.934998374959374,
+      "holdout_1000": {
+        "bert_accuracy": 0.902,
+        "cnn_accuracy": 0.909,
+        "cnn_macro_f1": 0.9089846184005097,
+        "delta_percentage_points": 0.7000000000000006,
+        "cnn_only_correct": 16,
+        "bert_only_correct": 9,
+        "mcnemar_exact_p": 0.2295229434967041
+      }
+    }
+  ]
+}

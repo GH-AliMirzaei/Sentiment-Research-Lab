@@ -1,0 +1,19 @@
+{
+  "seed": 11,
+  "fixed_data_seeds": {
+    "train": 42,
+    "validation_selection": 43,
+    "holdout": 1042
+  },
+  "best_epoch": 1,
+  "best_validation_macro_f1": 0.93,
+  "holdout_1000": {
+    "bert_accuracy": 0.902,
+    "cnn_accuracy": 0.908,
+    "cnn_macro_f1": 0.9079631852741097,
+    "delta_percentage_points": 0.6000000000000005,
+    "cnn_only_correct": 18,
+    "bert_only_correct": 12,
+    "mcnemar_exact_p": 0.36159460805356514
+  }
+}

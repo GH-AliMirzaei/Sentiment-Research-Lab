@@ -1,0 +1,15 @@
+{
+  "variant": "without_kernel_2",
+  "disabled_kernel": 2,
+  "active_kernels": [
+    3,
+    4
+  ],
+  "seed": 22,
+  "best_epoch": 2,
+  "selection_macro_f1": 0.934998374959374,
+  "holdout_accuracy": 0.909,
+  "holdout_macro_f1": 0.9089955407814982,
+  "bert_accuracy": 0.902,
+  "holdout_samples": 1000
+}

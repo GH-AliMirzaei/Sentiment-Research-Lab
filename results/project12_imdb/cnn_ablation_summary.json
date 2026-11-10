@@ -1,0 +1,244 @@
+{
+  "project": "12",
+  "experiment": "Retrained functional CNN branch ablation",
+  "description": "One convolution branch is suppressed during training and evaluation using a forward hook.",
+  "active_reference_kernels": [
+    2,
+    3,
+    4
+  ],
+  "seeds": [
+    11,
+    22,
+    33
+  ],
+  "train_samples": 512,
+  "selection_samples": 200,
+  "holdout_samples": 1000,
+  "epochs": 2,
+  "full_mean_accuracy": 0.9093333333333332,
+  "comparison": {
+    "without_kernel_2": {
+      "mean_accuracy": 0.9086666666666666,
+      "sample_std_accuracy": 0.0005773502691896263,
+      "mean_delta_vs_full_pp": -0.06666666666666667,
+      "seed_results": [
+        {
+          "seed": 11,
+          "accuracy": 0.908,
+          "delta_vs_full_pp": 0.0
+        },
+        {
+          "seed": 22,
+          "accuracy": 0.909,
+          "delta_vs_full_pp": -0.2
+        },
+        {
+          "seed": 33,
+          "accuracy": 0.909,
+          "delta_vs_full_pp": 0.0
+        }
+      ]
+    },
+    "without_kernel_3": {
+      "mean_accuracy": 0.9076666666666666,
+      "sample_std_accuracy": 0.0032145502536643214,
+      "mean_delta_vs_full_pp": -0.16666666666666666,
+      "seed_results": [
+        {
+          "seed": 11,
+          "accuracy": 0.909,
+          "delta_vs_full_pp": 0.1
+        },
+        {
+          "seed": 22,
+          "accuracy": 0.91,
+          "delta_vs_full_pp": -0.1
+        },
+        {
+          "seed": 33,
+          "accuracy": 0.904,
+          "delta_vs_full_pp": -0.5
+        }
+      ]
+    },
+    "without_kernel_4": {
+      "mean_accuracy": 0.9073333333333333,
+      "sample_std_accuracy": 0.0030550504633038962,
+      "mean_delta_vs_full_pp": -0.19999999999999998,
+      "seed_results": [
+        {
+          "seed": 11,
+          "accuracy": 0.91,
+          "delta_vs_full_pp": 0.2
+        },
+        {
+          "seed": 22,
+          "accuracy": 0.904,
+          "delta_vs_full_pp": -0.7
+        },
+        {
+          "seed": 33,
+          "accuracy": 0.908,
+          "delta_vs_full_pp": -0.1
+        }
+      ]
+    }
+  },
+  "runs": [
+    {
+      "variant": "without_kernel_2",
+      "disabled_kernel": 2,
+      "active_kernels": [
+        3,
+        4
+      ],
+      "seed": 11,
+      "best_epoch": 1,
+      "selection_macro_f1": 0.93,
+      "holdout_accuracy": 0.908,
+      "holdout_macro_f1": 0.907990799079908,
+      "bert_accuracy": 0.902,
+      "holdout_samples": 1000,
+      "full_accuracy_same_seed": 0.908,
+      "delta_vs_full_pp": 0.0
+    },
+    {
+      "variant": "without_kernel_2",
+      "disabled_kernel": 2,
+      "active_kernels": [
+        3,
+        4
+      ],
+      "seed": 22,
+      "best_epoch": 2,
+      "selection_macro_f1": 0.934998374959374,
+      "holdout_accuracy": 0.909,
+      "holdout_macro_f1": 0.9089955407814982,
+      "bert_accuracy": 0.902,
+      "holdout_samples": 1000,
+      "full_accuracy_same_seed": 0.911,
+      "delta_vs_full_pp": -0.2
+    },
+    {
+      "variant": "without_kernel_2",
+      "disabled_kernel": 2,
+      "active_kernels": [
+        3,
+        4
+      ],
+      "seed": 33,
+      "best_epoch": 1,
+      "selection_macro_f1": 0.934998374959374,
+      "holdout_accuracy": 0.909,
+      "holdout_macro_f1": 0.9089846184005097,
+      "bert_accuracy": 0.902,
+      "holdout_samples": 1000,
+      "full_accuracy_same_seed": 0.909,
+      "delta_vs_full_pp": 0.0
+    },
+    {
+      "variant": "without_kernel_3",
+      "disabled_kernel": 3,
+      "active_kernels": [
+        2,
+        4
+      ],
+      "seed": 11,
+      "best_epoch": 1,
+      "selection_macro_f1": 0.93,
+      "holdout_accuracy": 0.909,
+      "holdout_macro_f1": 0.9089846184005097,
+      "bert_accuracy": 0.902,
+      "holdout_samples": 1000,
+      "full_accuracy_same_seed": 0.908,
+      "delta_vs_full_pp": 0.1
+    },
+    {
+      "variant": "without_kernel_3",
+      "disabled_kernel": 3,
+      "active_kernels": [
+        2,
+        4
+      ],
+      "seed": 22,
+      "best_epoch": 2,
+      "selection_macro_f1": 0.93999399939994,
+      "holdout_accuracy": 0.91,
+      "holdout_macro_f1": 0.9099996399985599,
+      "bert_accuracy": 0.902,
+      "holdout_samples": 1000,
+      "full_accuracy_same_seed": 0.911,
+      "delta_vs_full_pp": -0.1
+    },
+    {
+      "variant": "without_kernel_3",
+      "disabled_kernel": 3,
+      "active_kernels": [
+        2,
+        4
+      ],
+      "seed": 33,
+      "best_epoch": 1,
+      "selection_macro_f1": 0.93999399939994,
+      "holdout_accuracy": 0.904,
+      "holdout_macro_f1": 0.9039965438755795,
+      "bert_accuracy": 0.902,
+      "holdout_samples": 1000,
+      "full_accuracy_same_seed": 0.909,
+      "delta_vs_full_pp": -0.5
+    },
+    {
+      "variant": "without_kernel_4",
+      "disabled_kernel": 4,
+      "active_kernels": [
+        2,
+        3
+      ],
+      "seed": 11,
+      "best_epoch": 1,
+      "selection_macro_f1": 0.934998374959374,
+      "holdout_accuracy": 0.91,
+      "holdout_macro_f1": 0.9099942396313364,
+      "bert_accuracy": 0.902,
+      "holdout_samples": 1000,
+      "full_accuracy_same_seed": 0.908,
+      "delta_vs_full_pp": 0.2
+    },
+    {
+      "variant": "without_kernel_4",
+      "disabled_kernel": 4,
+      "active_kernels": [
+        2,
+        3
+      ],
+      "seed": 22,
+      "best_epoch": 1,
+      "selection_macro_f1": 0.9399759903961584,
+      "holdout_accuracy": 0.904,
+      "holdout_macro_f1": 0.9039965438755795,
+      "bert_accuracy": 0.902,
+      "holdout_samples": 1000,
+      "full_accuracy_same_seed": 0.911,
+      "delta_vs_full_pp": -0.7
+    },
+    {
+      "variant": "without_kernel_4",
+      "disabled_kernel": 4,
+      "active_kernels": [
+        2,
+        3
+      ],
+      "seed": 33,
+      "best_epoch": 1,
+      "selection_macro_f1": 0.934998374959374,
+      "holdout_accuracy": 0.908,
+      "holdout_macro_f1": 0.9079867500920132,
+      "bert_accuracy": 0.902,
+      "holdout_samples": 1000,
+      "full_accuracy_same_seed": 0.909,
+      "delta_vs_full_pp": -0.1
+    }
+  ],
+  "caution": "Descriptive differences only; full-versus-ablated paired per-sample predictions were not retained."
+}
