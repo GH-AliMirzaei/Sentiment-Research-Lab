@@ -1,0 +1,82 @@
+{
+    "project": "10",
+    "dataset": "SetFit/amazon_reviews_multi_en",
+    "revision": "ec73b66",
+    "split": "test",
+    "samples": 400,
+    "seed": 42,
+    "label_mapping": {
+        "0-1": "negative",
+        "2": "excluded",
+        "3-4": "positive"
+    },
+    "max_length": 256,
+    "ensemble_weight_roberta": 0.5,
+    "metrics": {
+        "RoBERTa": {
+            "accuracy": 0.8525,
+            "macro_f1": 0.851921568627451,
+            "errors": 59,
+            "confusion_matrix": [
+                [
+                    158,
+                    42
+                ],
+                [
+                    17,
+                    183
+                ]
+            ]
+        },
+        "DeBERTa": {
+            "accuracy": 0.8975,
+            "macro_f1": 0.8974993593709961,
+            "errors": 41,
+            "confusion_matrix": [
+                [
+                    179,
+                    21
+                ],
+                [
+                    20,
+                    180
+                ]
+            ]
+        },
+        "Ensemble": {
+            "accuracy": 0.8875,
+            "macro_f1": 0.8871890648600205,
+            "errors": 45,
+            "confusion_matrix": [
+                [
+                    167,
+                    33
+                ],
+                [
+                    12,
+                    188
+                ]
+            ]
+        }
+    },
+    "paired_tests": {
+        "Ensemble_vs_RoBERTa": {
+            "first_only_correct": 15,
+            "second_only_correct": 1,
+            "exact_p_value": 0.000518798828125,
+            "holm_adjusted_p_value": 0.001556396484375
+        },
+        "Ensemble_vs_DeBERTa": {
+            "first_only_correct": 14,
+            "second_only_correct": 18,
+            "exact_p_value": 0.5966148958541453,
+            "holm_adjusted_p_value": 0.5966148958541453
+        },
+        "RoBERTa_vs_DeBERTa": {
+            "first_only_correct": 15,
+            "second_only_correct": 33,
+            "exact_p_value": 0.01328328156224501,
+            "holm_adjusted_p_value": 0.02656656312449002
+        }
+    }
+}

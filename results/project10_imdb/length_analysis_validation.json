@@ -1,0 +1,89 @@
+{
+    "project": "10",
+    "dataset": "IMDB",
+    "split": "validation",
+    "samples": 5000,
+    "length_reference": "RoBERTa tokenizer, including special tokens",
+    "model_max_length": 256,
+    "ensemble_weight_roberta": 0.5,
+    "groups": {
+        "Short (<=128)": {
+            "samples": 579,
+            "positive": 334,
+            "negative": 245,
+            "metrics": {
+                "RoBERTa": {
+                    "accuracy": 0.9568221070811744,
+                    "macro_f1": 0.9558480379447605,
+                    "correct": 554,
+                    "errors": 25
+                },
+                "DeBERTa": {
+                    "accuracy": 0.9533678756476683,
+                    "macro_f1": 0.9522652115897245,
+                    "correct": 552,
+                    "errors": 27
+                },
+                "Ensemble": {
+                    "accuracy": 0.9568221070811744,
+                    "macro_f1": 0.9558011218423375,
+                    "correct": 554,
+                    "errors": 25
+                }
+            },
+            "ensemble_vs_roberta_delta_pp": 0.0
+        },
+        "Medium (129-256)": {
+            "samples": 2345,
+            "positive": 1126,
+            "negative": 1219,
+            "metrics": {
+                "RoBERTa": {
+                    "accuracy": 0.9381663113006397,
+                    "macro_f1": 0.9380942627614302,
+                    "correct": 2200,
+                    "errors": 145
+                },
+                "DeBERTa": {
+                    "accuracy": 0.9445628997867804,
+                    "macro_f1": 0.9444755696149043,
+                    "correct": 2215,
+                    "errors": 130
+                },
+                "Ensemble": {
+                    "accuracy": 0.9445628997867804,
+                    "macro_f1": 0.9444899668596818,
+                    "correct": 2215,
+                    "errors": 130
+                }
+            },
+            "ensemble_vs_roberta_delta_pp": 0.6397
+        },
+        "Long (>256)": {
+            "samples": 2076,
+            "positive": 1040,
+            "negative": 1036,
+            "metrics": {
+                "RoBERTa": {
+                    "accuracy": 0.9108863198458574,
+                    "macro_f1": 0.9108788547865545,
+                    "correct": 1891,
+                    "errors": 185
+                },
+                "DeBERTa": {
+                    "accuracy": 0.9036608863198459,
+                    "macro_f1": 0.9036576672903858,
+                    "correct": 1876,
+                    "errors": 200
+                },
+                "Ensemble": {
+                    "accuracy": 0.9142581888246628,
+                    "macro_f1": 0.9142574726085564,
+                    "correct": 1898,
+                    "errors": 178
+                }
+            },
+            "ensemble_vs_roberta_delta_pp": 0.3372
+        }
+    }
+}

@@ -1,0 +1,39 @@
+{
+    "dataset": "IMDb",
+    "split": "validation",
+    "samples": 200,
+    "seed": 1042,
+    "perturbation": "Swap two distinct adjacent internal letters in one word near the beginning of each review",
+    "results": {
+        "RoBERTa": {
+            "clean_accuracy": 0.945,
+            "typo_accuracy": 0.945,
+            "accuracy_change_pp": 0.0,
+            "prediction_flips": 0,
+            "flip_rate": 0.0,
+            "clean_only_correct": 0,
+            "typo_only_correct": 0,
+            "mcnemar_exact_p_value": 1.0
+        },
+        "DeBERTa": {
+            "clean_accuracy": 0.93,
+            "typo_accuracy": 0.925,
+            "accuracy_change_pp": -0.5000000000000004,
+            "prediction_flips": 1,
+            "flip_rate": 0.005,
+            "clean_only_correct": 1,
+            "typo_only_correct": 0,
+            "mcnemar_exact_p_value": 1.0
+        },
+        "Ensemble": {
+            "clean_accuracy": 0.95,
+            "typo_accuracy": 0.95,
+            "accuracy_change_pp": 0.0,
+            "prediction_flips": 0,
+            "flip_rate": 0.0,
+            "clean_only_correct": 0,
+            "typo_only_correct": 0,
+            "mcnemar_exact_p_value": 1.0
+        }
+    }
+}
