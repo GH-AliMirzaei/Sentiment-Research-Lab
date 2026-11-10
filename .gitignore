@@ -13,3 +13,7 @@ __pycache__/
 *.safetensors
 /results/project06_imdb/paired_roberta_deberta/paired_errors.csv
 /results/project07_imdb/cache/
+/results/project08_imdb/*_predictions.jsonl
+/results/project08_imdb/qwen15b_rubric_v1_predictions.jsonl
+/checkpoints/project08_imdb/
+/results/project08_imdb/validation_qlora_*_predictions.jsonl

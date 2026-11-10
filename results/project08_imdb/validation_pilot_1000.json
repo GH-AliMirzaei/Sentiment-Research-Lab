@@ -1,0 +1,21 @@
+{
+    "model": "Qwen/Qwen2.5-1.5B-Instruct",
+    "dataset": "IMDB",
+    "split": "validation",
+    "samples": 1000,
+    "seed": 42,
+    "results": {
+        "zero_shot": {
+            "accuracy": 0.913,
+            "macro_f1": 0.9129978249456236,
+            "valid_output_rate": 1.0,
+            "invalid_outputs": 0
+        },
+        "few_shot": {
+            "accuracy": 0.924,
+            "macro_f1": 0.9239987839805437,
+            "valid_output_rate": 1.0,
+            "invalid_outputs": 0
+        }
+    }
+}

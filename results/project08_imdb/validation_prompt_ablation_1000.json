@@ -1,0 +1,29 @@
+{
+    "model": "Qwen/Qwen2.5-1.5B-Instruct",
+    "split": "validation",
+    "samples": 1000,
+    "seed": 42,
+    "prompt_variant": "rubric_v1",
+    "system_prompt": "Classify the overall sentiment of an IMDb movie review. Positive means the reviewer has an overall favorable opinion of the movie. Negative means an overall unfavorable opinion. Pay attention to negation, sarcasm, contrast, and mixed opinions. A sad story does not necessarily mean a negative movie review. When both praise and criticism appear, identify the reviewer's overall evaluation of the movie. Reply with exactly one lowercase word: positive or negative. Do not provide an explanation.",
+    "original_few_shot": {
+        "accuracy": 0.924,
+        "macro_f1": 0.9239987839805437,
+        "correct": 924,
+        "errors": 76,
+        "invalid_outputs": 0
+    },
+    "rubric_few_shot": {
+        "accuracy": 0.926,
+        "macro_f1": 0.9259988159810557,
+        "correct": 926,
+        "errors": 74,
+        "invalid_outputs": 0
+    },
+    "mcnemar": {
+        "original_only_correct": 4,
+        "rubric_only_correct": 6,
+        "discordant": 10,
+        "exact_p_value": 0.75390625,
+        "significant_at_0_05": false
+    }
+}

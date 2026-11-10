@@ -1,0 +1,20 @@
+{
+    "model": "Qwen/Qwen2.5-1.5B-Instruct",
+    "dataset": "IMDB",
+    "split": "train",
+    "method": "QLoRA 4-bit NF4",
+    "samples_in_training_pool": 128,
+    "optimizer_steps": 10,
+    "gradient_accumulation": 8,
+    "lora_rank": 8,
+    "target_modules": [
+        "q_proj",
+        "v_proj"
+    ],
+    "max_length": 256,
+    "seed": 42,
+    "training_loss": 0.19213945614174008,
+    "adapter": "checkpoints\\project08_imdb\\qwen_qlora_smoke",
+    "validation_accuracy": null,
+    "test_accuracy": null
+}

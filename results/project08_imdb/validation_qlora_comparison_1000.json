@@ -1,0 +1,28 @@
+{
+    "dataset": "IMDB",
+    "split": "validation",
+    "samples": 1000,
+    "seed": 42,
+    "evaluation_prompt": "Original training prompt, 160 review tokens",
+    "base_4bit": {
+        "accuracy": 0.894,
+        "macro_f1": 0.8942052099946837,
+        "correct": 894,
+        "errors": 106,
+        "invalid_outputs": 1
+    },
+    "qlora_2000": {
+        "accuracy": 0.903,
+        "macro_f1": 0.9027267594673438,
+        "correct": 903,
+        "errors": 97,
+        "invalid_outputs": 0
+    },
+    "mcnemar": {
+        "base_only_correct": 12,
+        "qlora_only_correct": 21,
+        "discordant": 33,
+        "p_value": 0.16275565745308995,
+        "significant_at_0_05": false
+    }
+}

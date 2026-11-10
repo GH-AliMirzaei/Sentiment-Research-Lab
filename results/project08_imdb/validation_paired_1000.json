@@ -1,0 +1,61 @@
+{
+    "dataset": "IMDB",
+    "split": "validation",
+    "samples": 1000,
+    "seed": 42,
+    "metrics": {
+        "Qwen Zero-Shot": {
+            "accuracy": 0.913,
+            "macro_f1": 0.9129978249456236,
+            "correct": 913,
+            "errors": 87
+        },
+        "Qwen Few-Shot": {
+            "accuracy": 0.924,
+            "macro_f1": 0.9239987839805437,
+            "correct": 924,
+            "errors": 76
+        },
+        "RoBERTa": {
+            "accuracy": 0.926,
+            "macro_f1": 0.9259703881552621,
+            "correct": 926,
+            "errors": 74
+        },
+        "DeBERTa": {
+            "accuracy": 0.926,
+            "macro_f1": 0.9259952636968767,
+            "correct": 926,
+            "errors": 74
+        },
+        "Ensemble": {
+            "accuracy": 0.935,
+            "macro_f1": 0.9349890131432212,
+            "correct": 935,
+            "errors": 65
+        }
+    },
+    "paired_tests": {
+        "Few-Shot vs Zero-Shot": {
+            "first_only_correct": 20,
+            "second_only_correct": 9,
+            "discordant": 29,
+            "mcnemar_exact_p_value": 0.06142834573984146,
+            "significant_at_0_05": false
+        },
+        "Few-Shot vs Ensemble": {
+            "first_only_correct": 19,
+            "second_only_correct": 30,
+            "discordant": 49,
+            "mcnemar_exact_p_value": 0.15240777196147803,
+            "significant_at_0_05": false
+        },
+        "Ensemble vs RoBERTa": {
+            "first_only_correct": 12,
+            "second_only_correct": 3,
+            "discordant": 15,
+            "mcnemar_exact_p_value": 0.03515625,
+            "significant_at_0_05": true
+        }
+    }
+}
